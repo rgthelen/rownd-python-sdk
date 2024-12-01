@@ -160,11 +160,29 @@ print(f"API error: {e}")
 
 ## Development
 
+Set up: 
+
+Set up a virtual environment:
+```bash
+python3 -m venv venv
+source venv/bin/activate  # On Windows, use: venv\Scripts\activate
+
+```
+
 1. Clone the repository
 2. Install dependencies:
 
 ```bash
 pip install -e ".[dev]"
+```
+
+Set up the environment variables:
+```bash
+ROWND_APP_KEY=your_app_key_here
+ROWND_APP_SECRET=your_app_secret_here
+ROWND_APP_ID=your_app_id_here
+ROWND_APP_ID=your_app_id_here
+
 ```
 
 3. Run tests:
@@ -174,7 +192,7 @@ pytest
 ```
 OR
 ```bash
-python -m pytest tests
+python -m pytest tests -v
 ```
 
 ## Development Setup (to run the tests)
